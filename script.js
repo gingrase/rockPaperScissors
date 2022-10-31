@@ -58,7 +58,10 @@ let drawGames = 0;
 
         // display the game status
         const currentStatus = document.createElement('p');
-        currentStatus.textContent = ('Score is: You = ' + playerScore + ' | Computer = ' + computerScore);
+        currentStatus.textContent = ('Score is: You = ' + playerScore +
+                                     ' | Computer = ' + computerScore + 
+                                     ' ; First to ' + roundToWin + 
+                                     ' wins the game...');
         currentStatus.classList.add('gameStatus');           
         gameContainer.appendChild(currentStatus);
 
