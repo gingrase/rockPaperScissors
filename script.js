@@ -47,6 +47,12 @@ let drawGames = 0;
         resultContainer.appendChild(currentResult);
     }
 
+    function resetGame() {
+        playerScore = 0;
+        computerScore = 0;
+        drawGames = 0; 
+    }
+
     function adjustGameStatus() {
         const gameContainer = document.querySelector('.game');
 
@@ -71,17 +77,13 @@ let drawGames = 0;
             gameResult.textContent = ('YOU WON THE GAME!!!');
             gameResult.classList.add('gameStatus');           
             gameContainer.appendChild(gameResult);  
-            playerScore = 0;
-            computerScore = 0;
-            drawGames = 0;  
+            resetGame(); 
         } else if (computerScore === roundToWin) {
             const gameResult = document.createElement('p');
             gameResult.textContent = ('THE COMPUTER WON THE GAME, BETTER LUCK NEXT TIME!!!');
             gameResult.classList.add('gameStatus');           
             gameContainer.appendChild(gameResult); 
-            playerScore = 0;
-            computerScore = 0;
-            drawGames = 0;
+            resetGame();
         }
     }
 

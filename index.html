@@ -2,28 +2,34 @@
     <head>
         <title>Rock, Paper, Scissors?</title>
         <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>Rock, Paper or Scissors?</h1>
-        <div class="buttons">
-            <button class="playersChoice" id="✊">✊</button>
-            <button class="playersChoice" id="✋">✋</button>
-            <button class="playersChoice" id="✌">✌</button>
-        </div>
-
-        <h1>Computer played:</h1>
-        <div class="computer">
+        <h1 class="title">Rock, Paper or Scissors?</h1>
         
-        </div>
+        <div class="gameArea">
+            <div class="buttons">
+                <h1>Your hand:</h1>
+                <button class="playersChoice" id="✊">✊</button>
+                <button class="playersChoice" id="✋">✋</button>
+                <button class="playersChoice" id="✌">✌</button>
+            </div>
 
-        <h2>Result of this round:</h2>
-        <div class="round">
+            <div class="status">
+                <div class="round">
+                    <h2>Result of this round:</h2>
+                    <p class="roundResult"> - </p>
+                </div>
 
-        </div>
+                <div class="game">
+                    <h2>Game score:</h2>
+                    <p class="gameStatus"> - </p>
+                </div>
+            </div>
 
-        <h2>Game score:</h2>
-        <div class="game">
-
+            <div class="computer">
+                <h1>Computer played:</h1> 
+            </div>
         </div>
     </body>
 </html>
